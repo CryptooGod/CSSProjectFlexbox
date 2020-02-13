@@ -9,23 +9,27 @@
 }
 
 .header {
+    font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
     border-bottom: var(--grey-light-2);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content {
     display: flex;
 
-}
+    &__sidebar {
+        background-color: var(--grey-dark-1);
+        flex: 0 0 18%;
+    }
 
-.sidebar {
-    background-color: var(--grey-dark-1);
-    flex: 0 0 18%;
-
-}
-
-.hotel-view {
-    background-color: #fff;
-    flex: 1;
+    &__hotel-view {
+        background-color: #fff;
+        flex: 1;
+        background-color: orangered;
+    }
 }
